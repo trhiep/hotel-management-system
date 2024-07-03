@@ -1,10 +1,10 @@
-using HotelManagementSystem.Models;
+using HotelManagementSystem.Utils.DBContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<HMS_DBContext>();
+builder.Services.AddDbContext<HMSContext>();
 builder.Services.AddSession();
 builder.Services.AddMemoryCache();
 builder.Services.AddHttpContextAccessor();
