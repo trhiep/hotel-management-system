@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HotelManagementSystem.Models.Entities
+namespace HotelManagementSystem.Models
 {
     public partial class Facility
     {
@@ -13,6 +13,7 @@ namespace HotelManagementSystem.Models.Entities
         public int FacilityId { get; set; }
         public string FacilityName { get; set; } = null!;
         public float Price { get; set; }
+        public string? Description { get; set; }
 
         public virtual ICollection<RoomFacility> RoomFacilities { get; set; }
     }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HotelManagementSystem.Models.Entities
+namespace HotelManagementSystem.Models
 {
     public partial class Customer
     {
@@ -19,6 +19,7 @@ namespace HotelManagementSystem.Models.Entities
         public string PhoneNumber { get; set; } = null!;
         public string? Email { get; set; }
         public bool IsLoyal { get; set; }
+        public bool IsAllowReceiveInformaton { get; set; }
 
         public virtual ICollection<MenuBooking> MenuBookings { get; set; }
         public virtual ICollection<PromotionCustomer> PromotionCustomers { get; set; }

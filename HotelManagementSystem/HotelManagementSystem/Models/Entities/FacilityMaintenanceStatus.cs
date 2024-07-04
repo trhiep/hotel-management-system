@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HotelManagementSystem.Models.Entities
+namespace HotelManagementSystem.Models
 {
     public partial class FacilityMaintenanceStatus
     {
@@ -10,7 +10,7 @@ namespace HotelManagementSystem.Models.Entities
             FacilityReports = new HashSet<FacilityReport>();
         }
 
-        public int StatusId { get; set; }
+        public int MaintenanceStatusId { get; set; }
         public string StatusName { get; set; } = null!;
 
         public virtual ICollection<FacilityReport> FacilityReports { get; set; }

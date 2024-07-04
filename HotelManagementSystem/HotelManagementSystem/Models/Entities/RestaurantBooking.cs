@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HotelManagementSystem.Models.Entities
+namespace HotelManagementSystem.Models
 {
     public partial class RestaurantBooking
     {
-        public int BookingId { get; set; }
+        public int RestaurantBookingId { get; set; }
         public int CustomerId { get; set; }
         public int TableId { get; set; }
 

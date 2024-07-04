@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace HotelManagementSystem.Models
 {
-    public partial class PromotionType
+    public partial class PromotionStatus
     {
-        public PromotionType()
+        public PromotionStatus()
         {
             Promotions = new HashSet<Promotion>();
         }
 
-        public int PromotionTypeId { get; set; }
-        public string TypeName { get; set; } = null!;
+        public int PromotionStatusId { get; set; }
+        public string StatusName { get; set; } = null!;
 
         public virtual ICollection<Promotion> Promotions { get; set; }
     }

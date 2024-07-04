@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HotelManagementSystem.Models.Entities
+namespace HotelManagementSystem.Models
 {
     public partial class RestaurantTable
     {
@@ -10,8 +10,8 @@ namespace HotelManagementSystem.Models.Entities
             RestaurantBookings = new HashSet<RestaurantBooking>();
         }
 
-        public int Slot { get; set; }
         public int TableId { get; set; }
+        public int Slot { get; set; }
 
         public virtual ICollection<RestaurantBooking> RestaurantBookings { get; set; }
     }
