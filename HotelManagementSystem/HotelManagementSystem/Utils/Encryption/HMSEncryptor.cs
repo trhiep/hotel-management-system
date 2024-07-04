@@ -1,4 +1,4 @@
-﻿namespace SampleProjectStructure.Utils.Encryption
+﻿namespace HotelManagementSystem.Utils.Encryption
 {
     public class HMSEncryptor
     {

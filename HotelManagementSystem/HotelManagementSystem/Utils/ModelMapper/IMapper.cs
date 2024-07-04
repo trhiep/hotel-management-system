@@ -1,4 +1,4 @@
-﻿namespace SampleProjectStructure.Utils.ModelMapper
+﻿namespace HotelManagementSystem.Utils.ModelMapper
 {
     public interface IMapper<TEntity, TDto>
     {

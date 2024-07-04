@@ -1,4 +1,4 @@
-﻿namespace SampleProjectStructure.Utils.ErrorMessage
+﻿namespace HotelManagementSystem.Utils.ErrorMessage
 {
     public class AccountErrorMessage
     {

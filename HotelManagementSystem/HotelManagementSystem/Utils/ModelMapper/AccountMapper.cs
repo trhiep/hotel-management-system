@@ -1,7 +1,7 @@
 ﻿using HotelManagementSystem.Models.DTOs;
 using HotelManagementSystem.Models.Entities;
 
-namespace SampleProjectStructure.Utils.ModelMapper
+namespace HotelManagementSystem.Utils.ModelMapper
 {
     public class AccountMapper : IMapper<Account, AccountDTO>
     {

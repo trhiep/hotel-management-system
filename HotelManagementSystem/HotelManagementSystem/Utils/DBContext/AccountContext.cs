@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 
-namespace SampleProjectStructure.Utils.DBContext
+namespace HotelManagementSystem.Utils.DBContext
 {
     public partial class AccountContext : DbContext
     {

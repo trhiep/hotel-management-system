@@ -1,4 +1,4 @@
-﻿namespace SampleProjectStructure.Utils.ErrorLogging
+﻿namespace HotelManagementSystem.Utils.ErrorLogging
 {
     public class ErrorLogger
     {

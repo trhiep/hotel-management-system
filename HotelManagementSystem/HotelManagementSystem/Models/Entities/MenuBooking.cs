@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HotelManagementSystem.Models
+namespace HotelManagementSystem.Models.Entities
 {
     public partial class MenuBooking
     {

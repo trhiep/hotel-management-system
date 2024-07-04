@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<HMSContext>();
+builder.Services.AddDbContext<HMS_DBContext>();
 builder.Services.AddSession();
 builder.Services.AddMemoryCache();
 builder.Services.AddHttpContextAccessor();
