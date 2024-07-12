@@ -17,31 +17,6 @@ namespace HotelManagementSystem.Utils.DBContext
         {
         }
 
-        public virtual DbSet<Account> Accounts { get; set; } = null!;
-        public virtual DbSet<Bill> Bills { get; set; } = null!;
-        public virtual DbSet<BillDetail> BillDetails { get; set; } = null!;
-        public virtual DbSet<BookingStatus> BookingStatuses { get; set; } = null!;
-        public virtual DbSet<Customer> Customers { get; set; } = null!;
-        public virtual DbSet<Facility> Facilities { get; set; } = null!;
-        public virtual DbSet<FacilityMaintenanceStatus> FacilityMaintenanceStatuses { get; set; } = null!;
-        public virtual DbSet<FacilityReport> FacilityReports { get; set; } = null!;
-        public virtual DbSet<HotelRoom> HotelRooms { get; set; } = null!;
-        public virtual DbSet<MenuBooking> MenuBookings { get; set; } = null!;
-        public virtual DbSet<MenuCategory> MenuCategories { get; set; } = null!;
-        public virtual DbSet<MenuItem> MenuItems { get; set; } = null!;
-        public virtual DbSet<Promotion> Promotions { get; set; } = null!;
-        public virtual DbSet<PromotionCustomer> PromotionCustomers { get; set; } = null!;
-        public virtual DbSet<PromotionHotelRoom> PromotionHotelRooms { get; set; } = null!;
-        public virtual DbSet<PromotionStatus> PromotionStatuses { get; set; } = null!;
-        public virtual DbSet<PromotionTarget> PromotionTargets { get; set; } = null!;
-        public virtual DbSet<PromotionType> PromotionTypes { get; set; } = null!;
-        public virtual DbSet<ResetPasswordOtp> ResetPasswordOtps { get; set; } = null!;
-        public virtual DbSet<RestaurantBooking> RestaurantBookings { get; set; } = null!;
-        public virtual DbSet<RestaurantTable> RestaurantTables { get; set; } = null!;
-        public virtual DbSet<Role> Roles { get; set; } = null!;
-        public virtual DbSet<RoomBooking> RoomBookings { get; set; } = null!;
-        public virtual DbSet<RoomFacility> RoomFacilities { get; set; } = null!;
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -590,10 +565,6 @@ namespace HotelManagementSystem.Utils.DBContext
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("RoomFacilities_HotelRoom");
             });
-
-            OnModelCreatingPartial(modelBuilder);
         }
-
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
