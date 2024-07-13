@@ -1,4 +1,4 @@
-﻿namespace HotelManagementSystem.Utils.Encryption
+﻿namespace HotelManagementSystem.Utils
 {
     public class HMSEncryptor
     {

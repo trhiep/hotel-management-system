@@ -24,11 +24,9 @@ namespace HotelManagementSystem.Controllers.Account
             {
                 Console.WriteLine(item.Email);
             }
-
-
-            _accountContext.Accounts.Add(new HotelManagementSystem.Models.Entities.Account());
-            _accountContext.SaveChanges();
             log.Info("Entered Account");
+            log.Error("Entered Account");
+            log.Warn("Entered Account");
             return Page();
         }
     }
