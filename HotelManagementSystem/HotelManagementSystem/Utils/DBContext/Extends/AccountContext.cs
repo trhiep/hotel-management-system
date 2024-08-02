@@ -10,9 +10,24 @@ namespace HotelManagementSystem.Utils.DBContext.Extends
 
         public DbSet<Account> Accounts { get; set; } = null!;
 
-        private Account FindAccount(Account account)
+        public Account FindAccountByUsername(string username)
         {
-            return Accounts.Where(a => a.AccountId == account.AccountId).FirstOrDefault();
+            return Accounts.Where(a => a.Username == username).FirstOrDefault();
+        }
+
+        public Account FindAccountByEmail(string email)
+        {
+            return Accounts.Where(a => a.Email == email).FirstOrDefault();
+        }
+
+        public void UpdateAccount(Account account)
+        {
+            Account oldAccountInf = Accounts.Where(x => x.AccountId == account.AccountId).First();
+            if (oldAccountInf != null)
+            {
+                oldAccountInf.Password = account.Password;
+                Accounts.Update(oldAccountInf);
+            }
         }
     }
 }

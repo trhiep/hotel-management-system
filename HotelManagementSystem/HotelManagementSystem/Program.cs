@@ -15,6 +15,7 @@ namespace HotelManagementSystem
             builder.Services.AddRazorPages();
             builder.Services.AddDbContext<HMS_DBContext>();
             builder.Services.AddDbContext<AccountContext>();
+            builder.Services.AddDbContext<ResetPasswordOTPContext>();
 
             builder.Services.AddSession();
             builder.Services.AddMemoryCache();

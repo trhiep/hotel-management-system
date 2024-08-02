@@ -14,8 +14,8 @@ namespace HotelManagementSystem.Utils.ModelMapper
 
             return new AccountDTO
             {
-                AccountId = account.AccountId.ToString(),
-                Name = account.Username,
+                AccountId = account.AccountId,
+                Username = account.Username,
                 Email = account.Email,
                 Address = account.Address
             };
@@ -30,8 +30,8 @@ namespace HotelManagementSystem.Utils.ModelMapper
 
             return new Account
             {
-                AccountId = int.Parse(accountDto.AccountId),
-                Username = accountDto.Name,
+                AccountId = accountDto.AccountId,
+                Username = accountDto.Username,
                 Email = accountDto.Email,
                 Address = accountDto.Address
             };

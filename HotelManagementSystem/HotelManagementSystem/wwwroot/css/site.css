@@ -1,18 +1,54 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+.bold-text {
+    font-weight: bold
+}
+
+.login-container {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 740px;
+    height: 600px;
+}
+
+    .login-container h1 {
+        margin-bottom: 30px;
+    }
+
+    .login-container .form-control {
+        margin-bottom: 20px;
+    }
+
+    .login-container .btn {
+        background-color: #65558F;
+        color: white;
+    }
+
+        .login-container .btn:hover {
+            background-color: #563b72;
+        }
+
+    .login-container .forgot-password {
+        display: block;
+        margin-top: 20px;
+        color: black;
+        text-decoration: none;
+    }
